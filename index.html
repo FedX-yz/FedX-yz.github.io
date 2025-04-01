@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bust? or maybe I'll take it all!</title>
+    <link rel="stylesheet" href="static/gagachinmaru.ico">
+    <link rel="icon" href="static/gagachinmaru.ico" type="image/x-icon">
+    <link rel="icon" href="static/gagachinmaru.ico" type="image/png">
+    <link rel="icon" href="static/gagachinmaru.ico" sizes="64x64" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background-image: url("static/hox.gif");
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        h1 span {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), -2px -2px 4px rgba(0, 0, 0, 0.7);
+        }
+        #resultImage {
+            border-radius: 20px;
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            height: 250px;
+            object-fit: fill;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #00a4ea;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            display: block;
+            margin: 20px auto;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #007aae;
+        }
+        button:disabled {
+            background-color: #007aae;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>
+            <span style="color: pink;">SAVE</span>
+            <span style="color: yellow;">PULL</span>
+            <span style="color: white;">or</span>
+            <span style="color: red;">ALL IN?</span>
+        </h1>
+
+        <img id="resultImage" src="static/ALLIN.png" width="200" height="200">
+        
+        <br>
+        <button id="gambaButton" onclick="spin()">BUSS</button>
+
+        <!-- Audio elements -->
+        <audio id="spinsfx">
+            <source src="static/spinsfx.mp3" type="audio/mpeg">
+        </audio>
+        
+        <audio id="resultSound">
+            <!-- The result sound will be dynamically set in JavaScript -->
+        </audio>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
