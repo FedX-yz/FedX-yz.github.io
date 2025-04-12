@@ -1,0 +1,229 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.smash-or-pass-container {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.character {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.character img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.character img:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #00aaff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #007aad;
+}
+
+button:active {
+    background-color: #005f7a;
+}
+
+button.pass {
+    background-color: #ff4747;
+}
+
+button.pass:hover {
+    background-color: #d13535;
+}
+
+button.crack {
+    background-color: #00d68f;
+}
+
+button.crack:hover {
+    background-color: #009e70;
+}
+
+.watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    z-index: 9999;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+}
+
+/* Image sizing */
+#character-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button.crack {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgb(71, 255, 74);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+button.crack:hover {
+    background-color: rgb(46, 169, 48);
+}
+
+button.pass {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ea0000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+}
+
+button.pass:hover {
+    background-color: #b60000;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #00aaff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    z-index: 999;
+}
+
+.back-button:hover {
+    background-color: #007aad;
+}
+
+/* RESULTS SECTION */
+.results {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 16px;
+    margin: 50px auto;
+    max-width: 800px;
+    color: #eee;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0 0 25px rgba(0, 170, 255, 0.2);
+}
+
+.results h2 {
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.results-summary {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.results-list {
+    display: flex;
+    gap: 20px;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.results-column {
+    flex: 1;
+    background-color: #222;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 400px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.results-column h3 {
+    color: #00ffcc;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.results-column ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.results-column li {
+    padding: 6px 0;
+    border-bottom: 1px solid #333;
+    font-size: 15px;
+}

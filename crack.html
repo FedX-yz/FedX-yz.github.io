@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crack or Pass: Honkai Star Rail</title>
+    <link rel="stylesheet" href="crack.css">
+</head>
+<body>
+    <button onclick="history.back()" class="back-button">Back</button>
+
+    <div class="smash-or-pass-container">
+        <h1>Crack or Pass: Honkai Star Rail Edition</h1>
+
+        <!-- Character display section -->
+        <div id="character-display" class="character-container">
+            <div class="character">
+                <img id="character-img" src="character-image-1.png" alt="Character Name">
+                <div class="buttons">
+                    <button class="crack" onclick="nextCharacter(true)">Crack</button>
+                    <button class="pass" onclick="nextCharacter(false)">Pass</button>
+                </div>
+            </div>
+        </div>
+        <div class="results" id="results" style="display: none;">
+            <h2>Results</h2>
+            <div class="results-summary" id="summary"></div>
+            <div class="results-list">
+                <div class="results-column">
+                    <h3>Cracked</h3>
+                    <ul id="cracked-list"></ul>
+                </div>
+                <div class="results-column">
+                    <h3>Passed</h3>
+                    <ul id="passed-list"></ul>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+        <footer>
+            <p>Last update: <span id="last-update">April 12, 2025</span></p>
+        </footer>
+    </div>
+
+    <div class="watermark">
+        Made by the goat FedX™ ©
+    </div>
+
+    <script src="crack.js"></script>
+</body>
+</html>

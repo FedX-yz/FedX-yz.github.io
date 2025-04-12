@@ -22,3 +22,85 @@ button {
 button:hover {
     background-color: rgb(0, 117, 167);
 }
+#sidebarToggle {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    background-color: rgb(0, 143, 204);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 24px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: rgba(0, 104, 148, 0.9);
+    padding-top: 90px;
+    transition: left 0.3s ease;
+    z-index: 998;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 50px 35px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 1px; 
+    font-weight: bold;
+}
+
+#toggleSidebar:checked + #sidebarToggle + #sidebar {
+    left: 0;
+}
+/* Parent item with submenu */
+.has-submenu {
+    position: relative;
+}
+
+/* Hidden submenu by default */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(0, 104, 148, 0.9);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+    border-left: 2px solid rgba(28, 153, 206, 0.944);
+}
+
+/* Submenu links styling */
+.submenu li {
+    padding: 15px;
+}
+
+.submenu li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show submenu on hover */
+.has-submenu:hover .submenu {
+    display: block;
+}
